@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "course_selections",
   "info": {
-    "name": "Course Selection"
+    "name": "Course Selection",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,7 +28,8 @@
           "localized": true
         }
       },
-      "type": "decimal"
+      "type": "decimal",
+      "min": 0
     }
   }
 }
