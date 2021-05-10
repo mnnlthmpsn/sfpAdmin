@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "transactions",
   "info": {
-    "name": "Transaction"
+    "name": "Transaction",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -38,8 +39,8 @@
       "via": "transactions"
     },
     "course": {
-      "model": "course",
-      "via": "transactions"
+      "via": "transactions",
+      "model": "course"
     }
   }
 }

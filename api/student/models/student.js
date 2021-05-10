@@ -15,5 +15,14 @@ module.exports = {
                 amt_due: 0.00
             })
         }, 
+        afterDelete(result){
+            strapi.query('account').delete({
+                id: result.account.id
+            })
+
+            strapi.query('course_selection').delete({
+                student: result.id
+            })
+        }
     }
 };
