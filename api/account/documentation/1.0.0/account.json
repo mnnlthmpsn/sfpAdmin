@@ -601,6 +601,9 @@
                 "course": {
                   "type": "string"
                 },
+                "initiator": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {

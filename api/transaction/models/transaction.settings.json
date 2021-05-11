@@ -41,6 +41,10 @@
     "course": {
       "via": "transactions",
       "model": "course"
+    },
+    "initiator": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

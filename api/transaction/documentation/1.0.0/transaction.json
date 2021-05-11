@@ -619,6 +619,51 @@
               }
             }
           },
+          "initiator": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -640,6 +685,9 @@
                   "type": "string"
                 },
                 "course": {
+                  "type": "string"
+                },
+                "initiator": {
                   "type": "string"
                 },
                 "localizations": {
@@ -687,6 +735,9 @@
             "type": "string"
           },
           "course": {
+            "type": "string"
+          },
+          "initiator": {
             "type": "string"
           },
           "localizations": {

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/08/2021 5:11:08 PM"
+    "x-generation-date": "05/11/2021 3:32:43 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4929,6 +4929,9 @@
                 "course": {
                   "type": "string"
                 },
+                "initiator": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -5279,6 +5282,9 @@
                   "type": "string"
                 },
                 "course": {
+                  "type": "string"
+                },
+                "initiator": {
                   "type": "string"
                 },
                 "localizations": {
@@ -5698,6 +5704,51 @@
               }
             }
           },
+          "initiator": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -5719,6 +5770,9 @@
                   "type": "string"
                 },
                 "course": {
+                  "type": "string"
+                },
+                "initiator": {
                   "type": "string"
                 },
                 "localizations": {
@@ -5766,6 +5820,9 @@
             "type": "string"
           },
           "course": {
+            "type": "string"
+          },
+          "initiator": {
             "type": "string"
           },
           "localizations": {
